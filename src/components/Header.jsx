@@ -1,8 +1,8 @@
-import LogoKasa from "../logo kasa 1.png"
+//import LogoKasa from "../logo kasa 1.png"
+import { NavLink } from "react-router-dom"
 
 
-
-const Header = () => {
+export default function About() {
     return (
         <div className="header">
             <p>test affichage header</p>
@@ -10,13 +10,15 @@ const Header = () => {
         <img src="{LogoKasa}" alt="Kasa logo">
         
             <div>
-                <a>Accueil</a>
-                <a>A propos</a>
+                <NavLink to="./">
+                    <a>Accueil</a>
+                </NavLink>
+
+                <NavLink to="./about">
+                    <a>A propos</a>
+                </NavLink>
             </div>
         
         </div>
     )
-
 }
-
-export default Header
