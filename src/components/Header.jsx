@@ -1,21 +1,20 @@
-//import LogoKasa from "../logo kasa 1.png"
+import LogoKasa from "../assets/logo kasa 1.png"
 import { NavLink } from "react-router-dom"
 
 
 export default function About() {
     return (
         <div className="header">
-            <p>test affichage header</p>
         
-        <img src="{LogoKasa}" alt="Kasa logo">
+            <img src={LogoKasa} alt="Kasa logo" />
         
-            <div>
-                <NavLink to="./">
-                    <a>Accueil</a>
+            <div className="header--display">
+                <NavLink to="./" className={({isActive}) => (isActive ? "underline" : "")}>
+                    <p>Accueil</p>
                 </NavLink>
 
-                <NavLink to="./about">
-                    <a>A propos</a>
+                <NavLink to="./about" className={({isActive}) => (isActive ? "underline" : "")}>
+                    <p>A propos</p>
                 </NavLink>
             </div>
         

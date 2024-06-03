@@ -1,11 +1,62 @@
 
 
 .header {
-  color: green;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  img {
+    width: 200px;
+    height: 100px;
+  }
+
 }
 
-/*header {
+.header--display {
     display: flex;
-    justify-content: space-between;
-    margin-top: 30px;
-}*/ 
+    flex-direction: row;
+    p {
+      font-size: 30px;
+      padding: 30px;
+      color: orangered;
+      text-decoration: none;
+    }
+    a {
+      text-decoration: none;
+      &.underline {
+        text-decoration: underline;
+        color: orangered;
+      }
+    }
+}
+
+
+h1 {
+  display: flex;
+  justify-content: center;
+}
+
+
+.home {
+  
+  .banner {
+
+    img {
+      border-radius: 25px;
+      width: 1000px;
+      height: 200px;
+      
+    }
+    h1 {
+      position: absolute;
+      top: 50%;
+      left: 50%; 
+
+    }
+
+  }
+}
+
+
+.accommodations {
+  background-color: orange;
+}
